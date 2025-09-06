@@ -5,6 +5,7 @@ const fileContent = document.querySelector("#fileContent");
 openFileBtn.addEventListener("click", () => {
     const fileElem = document.createElement("input");
     fileElem.type = "file";
+    fileElem.accept = ".txt";
     fileElem.click();
     fileElem.addEventListener("change", (event) => {
         const file = event.target.files[0];
